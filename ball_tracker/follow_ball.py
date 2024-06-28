@@ -26,8 +26,8 @@ class FollowBall(Node):
             Point,
             '/detected_ball',
             self.listener_callback,
-            10)
-        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
+            1) #10
+        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 1)
 
 
         self.declare_parameter("rcv_timeout_secs", 1.0)
@@ -46,7 +46,7 @@ class FollowBall(Node):
         self.filter_value = self.get_parameter('filter_value').get_parameter_value().double_value
 
 
-        timer_period = 0.1  # seconds
+        timer_period = 0.0001  # seconds earlier 0.3
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.target_val = 0.0
         self.target_dist = 0.0

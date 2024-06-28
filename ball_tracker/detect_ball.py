@@ -119,4 +119,3 @@ def main(args=None):
 
     detect_ball.destroy_node()
     rclpy.shutdown()
-
