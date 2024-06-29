@@ -4,7 +4,7 @@
   <name>ball_tracker</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="josh.newans@gmail.com">newans</maintainer>
+  <maintainer email="pratikphadte@gmail.com">newans</maintainer>
   <license>TODO: License declaration</license>
 
   <test_depend>ament_copyright</test_depend>
