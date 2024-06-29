@@ -1,3 +1,8 @@
+# Fork to improve stream frame rate faced during video streaming from IP/USBcam/WEBcam 
+
+This is a fork of the library from Josh Newans (https://github.com/joshnewans/ball_tracker.git), while using it for a microROS project with ESP32, I faced latency issues in the video stream so I made a few changes in the timer callback, and publish instances. 
+
+
 # ball_tracker
 
 This repository contains a simple demonstration of using ROS and OpenCV to track a ball with a mobile robot via a camera feed.
